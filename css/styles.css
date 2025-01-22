@@ -257,14 +257,15 @@
     margin: 0 38px 48px 38px;
 }
 .stories-sub-item{
+    max-width: 601px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 19px;
 }
-.secondary-item{
+.secondary-stories-item{
     max-width: 290px;
     background-color: white;
-    border-radius: 0 0 16px 16px;
+    border-radius: 16px;
 }
 .secondary-item-image{
     border-radius: 16px 16px 0 0;
@@ -362,7 +363,7 @@
     }
     .navbar{
         border: 3px orange solid;
-        width: 100%;
+        max-width: 576px;
     }
     .fa-bars{
         display: block;
@@ -370,13 +371,16 @@
     .banner-container{
         flex-direction: column-reverse;
     }
+    .banner-content{
+        text-align: center;
+    }
     .curriculum-card-container{
         width: 100%;
         height: auto;
     }
     .curriculum-card{
         flex-direction: column;
-        height: auto;
+        align-items: center;
     }
     .angle-both-btn{
         display: none;
@@ -385,5 +389,30 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+    .first-fun-item{
+        display: none;
+    }
+    .stories-sub-item{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 15px;
+        position: static;
+        width: 90%;
+    }
+    .secondary-item-image{
+        width: 100%;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-logo-collum,
+    .footer-nav-collum,
+    .footer-social-collum
+    {
+        margin-left: 25px;
+        margin-bottom: 32px;
+    }
+    .footer-logo-description{
+        margin: 0;
+    }
 }
