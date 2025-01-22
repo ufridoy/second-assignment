@@ -74,8 +74,10 @@
     padding: 10px 60px;
     background-color: #FEA301;
 }
-.fa-bars{
-    font-size: 30px;
+.fa-solid{
+    font-size: 50px;
+}
+#dot-menu{
     display: none;
 }
 
@@ -116,7 +118,8 @@
     margin: 0%;
 }
 
-/* .curriculam-card style */
+
+/* .curriculam style */
 
 .background{
     background-image: url(../assets/bg.png);
@@ -294,6 +297,8 @@
     margin-top: 80px;
 }
 
+/* footer style */
+
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -355,6 +360,8 @@
 
 
 @media screen and (max-width:576px) {
+
+    /* header-responsive */
     .school,
     .header-nav,
     .header-nav-btn
@@ -365,7 +372,7 @@
         border: 3px orange solid;
         max-width: 576px;
     }
-    .fa-bars{
+    #dot-menu{
         display: block;
     }
     .banner-container{
@@ -373,7 +380,10 @@
     }
     .banner-content{
         text-align: center;
+        margin: 0 10px;
     }
+
+    /* curricullam resposnsive */
     .curriculum-card-container{
         width: 100%;
         height: auto;
@@ -381,10 +391,13 @@
     .curriculum-card{
         flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
     .angle-both-btn{
         display: none;
     }
+
+    /* stories resposnsive */
     .stories-main-item{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -395,24 +408,23 @@
     .stories-sub-item{
         display: grid;
         grid-template-columns: repeat(2, minmax(120px, 1fr));
-        gap: 15px;
-        position: static;
+        gap: 20px;
         width: 90%;
+        margin: 0% auto;
     }
     .secondary-item-image{
         width: 100%;
     }
-    .footer-container{
-        flex-direction: column;
+    .secondary-stories-item{
+        position: static;
     }
-    .footer-logo-collum,
-    .footer-nav-collum,
-    .footer-social-collum
-    {
-        margin-left: 25px;
-        margin-bottom: 32px;
+    .stories-second-btn,
+    .stories-first-btn,
+    .stories-third-btn{
+        font-size: 0.80rem;
+        margin-top: 130px;
+        margin-left: -220px;
     }
-    .footer-logo-description{
-        margin: 0;
-    }
+
+    
 }
