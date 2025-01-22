@@ -75,7 +75,7 @@
     background-color: #FEA301;
 }
 .fa-solid{
-    font-size: 50px;
+    font-size: 40px;
 }
 #dot-menu{
     display: none;
@@ -426,5 +426,20 @@
         margin-left: -220px;
     }
 
-    
+    /* footer resposnsive */
+
+    .footer-container{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .footer-logo-collum,
+    .footer-nav-collum,
+    .footer-social-collum
+    {
+        margin-left: 0px;
+        margin-bottom: 32px;
+    }
+    .footer-logo-description{
+        margin: 0;
+    }
 }
